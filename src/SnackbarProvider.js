@@ -55,13 +55,13 @@ class SnackbarProvider extends PureComponent {
   }
 
   render () {
-    const { children, SnackbarProps = {} } = this.props
+    const { children, snackbarProps = {} } = this.props
     const { action, message, open } = this.state
 
     return (
       <React.Fragment>
         {children}
-        <Snackbar {...SnackbarProps}
+        <Snackbar {...snackbarProps}
           open={open}
           message={message || ''}
           action={action && (
@@ -83,7 +83,7 @@ SnackbarProvider.childContextTypes = {
 
 SnackbarProvider.propTypes = {
   children: PropTypes.node,
-  SnackbarProps: PropTypes.object
+  snackbarProps: PropTypes.object
 }
 
 export default connect(

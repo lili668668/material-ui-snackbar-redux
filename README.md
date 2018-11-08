@@ -43,7 +43,7 @@ const store = createStore(reducer)
 
 ReactDOM.render(
   <Provider store={store}>
-    <SnackbarProvider SnackbarProps={{ autoHideDuration: 3500 }}>
+    <SnackbarProvider snackbarProps={{ autoHideDuration: 3500 }}>
       <App />
     </SnackbarProvider>
   </Provider>,
@@ -56,7 +56,7 @@ ReactDOM.render(
 |Name            |Type        |Default     |Description
 |----------------|------------|------------|--------------------------------
 |children|`node`||The children that are wrapped by this provider.
-|SnackbarProps|`object`||Properties applied to the `Snackbar` element.
+|snackbarProps|`object`||Properties applied to the `Snackbar` element.
 
 ## Usage
 

@@ -9,7 +9,7 @@ const store = configureStore()
 
 ReactDOM.render(
   <Provider store={store}>
-    <SnackbarProvider SnackbarProps={{ autoHideDuration: 1000 }}>
+    <SnackbarProvider snackbarProps={{ autoHideDuration: 1000 }}>
       <App />
     </SnackbarProvider>
   </Provider>,
